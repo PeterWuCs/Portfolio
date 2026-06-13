@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <meta name="description" content="Personal portfolio — experience, projects, publications.">
+  <link rel="icon" type="image/svg+xml" href="assets/goose.svg">
+
+  <!-- Fonts (needs internet; falls back to system fonts offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Space+Grotesk:wght@300;400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    /* Apply saved theme before first paint to avoid a flash (default: dark) */
+    (function () {
+      var saved = null;
+      try { saved = localStorage.getItem("theme"); } catch (e) {}
+      document.documentElement.setAttribute("data-theme", saved || "dark");
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <!-- ════════ Sticky top navigation ════════ -->
+  <header class="nav" id="nav">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="#about" class="nav-logo" id="nav-logo"><!-- goose + name injected by main.js --></a>
+      <ul class="nav-links" id="nav-links"><!-- links injected by main.js --></ul>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark / light theme"></button>
+        <button class="icon-btn nav-burger" id="nav-burger" aria-label="Open menu" aria-expanded="false"></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ════════ 1. Profile / hero ════════ -->
+    <section id="about" class="hero">
+      <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+      <div class="hero-content container" id="hero-content"><!-- injected by main.js --></div>
+    </section>
+
+    <!-- ════════ 2. Education ════════ -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Education</h2>
+        <div id="education-list" class="edu-list"></div>
+      </div>
+    </section>
+
+    <!-- ════════ 3. Experience (vertical timeline) ════════ -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Experience</h2>
+        <div id="experience-list" class="timeline"></div>
+      </div>
+    </section>
+
+    <!-- ════════ 4. Projects (card grid) ════════ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Projects</h2>
+        <div id="projects-list" class="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- ════════ 5. Publications ════════ -->
+    <section id="publications" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Publications</h2>
+        <div id="publications-list" class="pub-list"></div>
+      </div>
+    </section>
+
+    <!-- ════════ 6. Interests ════════ -->
+    <section id="interests" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Interests</h2>
+        <div id="interests-list" class="interests-casual"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ════════ Footer (with resident goose) ════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-links" id="footer-links"></div>
+      <p class="footer-note" id="footer-note"></p>
+      <div class="goose-corner">
+        <span class="honk-bubble" id="honk-bubble" role="status">HONK!</span>
+        <button class="goose-mascot" id="goose-mascot" aria-label="Honk! (click the goose)"></button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
