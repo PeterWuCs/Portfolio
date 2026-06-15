@@ -1,0 +1,7 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#3f3f46"/>
+  <rect x="40" y="40" width="720" height="420" rx="16" fill="#52525b"/>
+  <circle cx="280" cy="200" r="42" fill="#71717a"/>
+  <path d="M120 420 L300 270 L420 360 L530 250 L680 420 Z" fill="#71717a"/>
+  <text x="400" y="468" text-anchor="middle" font-family="sans-serif" font-size="26" fill="#a1a1aa">replace with a project screenshot</text>
+</svg>

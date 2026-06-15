@@ -1,108 +1,54 @@
-/* ╔══════════════════════════════════════════════════════════════════════╗
-   ║                                                                        ║
-   ║   ★★★  YOUR CONTENT LIVES HERE — THIS IS THE ONLY FILE TO EDIT  ★★★    ║
-   ║                                                                        ║
-   ║   HOW IT WORKS                                                         ║
-   ║   1. Change any text between "quotes", save, refresh the browser.     ║
-   ║   2. ADD an entry    → copy the TEMPLATE block above each list and    ║
-   ║                        paste it inside the [ ] brackets.               ║
-   ║   3. REMOVE an entry → delete its whole { ... }, block.                ║
-   ║   4. HIDE a section  → leave its list empty, e.g.                     ║
-   ║         publications: [],                                              ║
-   ║      …and the section AND its menu link disappear automatically.      ║
-   ║                                                                        ║
-   ╚══════════════════════════════════════════════════════════════════════╝ */
-
 const PROFILE_DATA = {
   profile: {
     name: "Peter Wu",
     tagline: "Software Engineer · Builder of Things",
-    intro:
-      "REPLACE ME — write two or three friendly sentences about who you are, " +
-      "what you love building, and what gets you excited. This is the first " +
-      "thing visitors read, so keep it human.",
+    intro: "Blah Blah.",
 
-    // ── Your photo ──────────────────────────────────────────────────────
-    // Drop a square photo into the assets/ folder (e.g. assets/profile.jpg)
-    // then change the line below to:  image: "assets/profile.jpg",
+    // ── photo ──────────────────────────────────────────────────────
     image: "assets/profile-placeholder.svg",
 
     // ── Contact links (shown as icons in the hero and footer) ──────────
-    email: "you@example.com",
-    linkedin: "https://www.linkedin.com/in/your-handle",
-    github: "https://github.com/your-handle",
+    email: "y226wu@uwaterloo.ca",
+    linkedin: "https://www.linkedin.com/in/peter-wu6/",
+    github: "https://github.com/PeterWuCs",
   },
 
-  /* ╔════════════════════════════════════════════════════════════════════╗
-     ║  ✏️  EDIT 2 — EDUCATION  (simple section, no cards)                  ║
-     ║                                                                     ║
-     ║  One school is typical; you can still add more entries —            ║
-     ║  TEMPLATE:                                                          ║
-     ║  {                                                                  ║
-     ║    school: "School Name",                                           ║
-     ║    degree: "Degree, Major",                                         ║
-     ║    period: "2018 – 2023",                                           ║
-     ║    note: "Optional: honours, clubs, thesis… (or leave \"\")",       ║
-     ║  },                                                                 ║
-     ║                                                                     ║
-     ║  🪿 Tip: any school containing "Waterloo" gets a goose badge.       ║
-     ╚════════════════════════════════════════════════════════════════════╝ */
   education: [
     {
       school: "University of Waterloo",
+      logo: "assets/uwaterloo_logo.png",
       degree:
         "Bachelor of Computer Science, Artificial Intelligence Specialization",
-      period: "20XX – 20XX",
       note: 'REPLACE ME — honours, co-op terms, clubs… or leave "" to hide.',
     },
   ],
-
-  /* ╔════════════════════════════════════════════════════════════════════╗
-     ║  ✏️  EDIT 3 — EXPERIENCE  (vertical timeline, newest job first)     ║
-     ║                                                                     ║
-     ║  TEMPLATE — copy & paste inside the [ ] below to add a job:         ║
-     ║  {                                                                  ║
-     ║    company: "Company Name",                                         ║
-     ║    logo: "assets/logos/company.png",  // "" = auto letter avatar    ║
-     ║    title: "Job Title",                                              ║
-     ║    period: "Jan 2024 – Present",                                    ║
-     ║    points: [                                                        ║
-     ║      "What you built or achieved…",                                 ║
-     ║      "Another highlight…",                                         ║
-     ║    ],                                                               ║
-     ║  },                                                                 ║
-     ║                                                                     ║
-     ║  Logo: drop the image in assets/ (square works best) and put its    ║
-     ║  path in logo. Leave "" and a letter avatar is shown instead.       ║
-     ╚════════════════════════════════════════════════════════════════════╝ */
   experience: [
     {
-      company: "REPLACE ME — Current Company",
-      logo: "", // ← e.g. "assets/logos/current-company.png"
-      title: "REPLACE ME — Job Title",
-      period: "Jan 20XX – Present",
+      company: "TrendAI (formerly Trend Micro) ",
+      logo: "assets/trendai_logo.jpg",
+      title: "Machine Learning Engineer Intern",
+      period: "May 2026 – Present",
       points: [
-        "REPLACE ME — something impressive you shipped or owned.",
-        "REPLACE ME — a measurable impact (faster, cheaper, bigger…).",
-        "REPLACE ME — a technology or skill you grew into.",
+        "Developing a domain-specific large language model (LLM) for email classification.",
       ],
     },
     {
-      company: "REPLACE ME — Previous Company",
-      logo: "",
-      title: "REPLACE ME — Job Title",
-      period: "May 20XX – Dec 20XX",
+      company: "Ericsson",
+      logo: "assets/ericsson_logo.jpg",
+      title: "Software Engineering Intern",
+      period: "Sep 2025 – Dec 2025",
       points: [
-        "REPLACE ME — what you did there.",
-        "REPLACE ME — another highlight.",
+        "Developed a 5G baseband performance log analysis tool in Python.",
       ],
     },
     {
-      company: "REPLACE ME — Internship / Co-op (delete block if not needed)",
-      logo: "",
-      title: "REPLACE ME — Intern Title",
-      period: "Summer 20XX",
-      points: ["REPLACE ME — what you learned or built."],
+      company: "McMaster University",
+      logo: "assets/mac_logo.jpg",
+      title: "Human-Centered AI Researcher",
+      period: "May 2025 - Aug 2025",
+      points: [
+        "Designed and developed an AR maze-solving programming game with an integrated AI assistant with Unity (C#).",
+      ],
     },
   ],
 
